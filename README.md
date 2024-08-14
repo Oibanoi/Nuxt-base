@@ -1,6 +1,7 @@
 # Nuxt 3 Base
 
 A base project for Nuxt 3 with additional features:
+
 - linting with `eslint` and `prettier`
 - example components in composition API syntax
 - example setup for meta information
@@ -8,7 +9,7 @@ A base project for Nuxt 3 with additional features:
 - vuetify theming and components
 - storybook setup with multiple modes for theming and i18n
 
-This project uses [`@jojomatik/nuxt-bundle`](https://github.com/jojomatik/nuxt-bundle) to provide updates to basic configuration and tested dependency updates. 
+This project uses [`@jojomatik/nuxt-bundle`](https://github.com/jojomatik/nuxt-bundle) to provide updates to basic configuration and tested dependency updates.
 
 If you want to opt out of `@jojomatik/nuxt-bundle` you can merge it into your projects config (e.g. `package.json`, `nuxt.config.ts`) and configure it yourself.
 
@@ -20,7 +21,7 @@ Make sure to install the dependencies
 yarn install
 ```
 
-## Development
+## Development 
 
 Start the development server on http://localhost:3000
 
