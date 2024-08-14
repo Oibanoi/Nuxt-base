@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint . --max-warnings 0",
+    "semantic-release": "semantic-release",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic"
+  },
+  "dependencies": {
+    "@jojomatik/nuxt-bundle": "^1.1.2",
+    "nuxt": "^3.11.1",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.2.4",
+    "vite": "^5.2.8"
+  },
+  "version": "1.0.1"
+}
