@@ -1,10 +1,9 @@
 node_modules
-*.log
+*.log*
 .nuxt
-nuxt.d.ts
+.nitro
+.cache
 .output
 .env
-public/assets/fonts
-public/dependencies.json
-storybook-static
-.storybook/imports.d.ts
+dist
+.DS_Store
