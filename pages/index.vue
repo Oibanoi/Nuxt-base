@@ -3,7 +3,7 @@
     definePageMeta({ layout: 'page' });
     useHead({
         titleTemplate: '',
-        title: awesome?.name || 'Nuxt 3 Awesome Starter',
+        title: awesome?.name,
     });
 </script>
 

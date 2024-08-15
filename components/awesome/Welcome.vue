@@ -31,27 +31,7 @@
             endColor: '#00DFD8',
             delay: 0,
         },
-        {
-            text: titlesText.value[1],
-            startColor: '#7928CA',
-            endColor: '#FF0080',
-            delay: 2,
-        },
-        {
-            text: titlesText.value[2],
-            startColor: '#FF4D4D',
-            endColor: '#F9CB28',
-            delay: 4,
-        },
     ]);
-
-    onMounted(() => {
-        try {
-            console.log('aweawe', parseMenuTitle('aweawe'), this);
-        } catch (error) {
-            console.log('aweawe error', error);
-        }
-    });
 </script>
 
 <template>
@@ -76,8 +56,7 @@
                     class="px-4 mt-6 text-center max-w-[500px] md:max-w-[600px]"
                 >
                     {{
-                        awesome?.description ||
-                        'a starter template for Nuxt 3 with minimalist themes design, built in components, drawer & menus, and more.'
+                        awesome?.description || 'a starter template for Nuxt 3.'
                     }}
                 </div>
                 <div
@@ -85,49 +64,6 @@
                     class="mt-4 w-auto text-center text-white bg-gray-800 rounded px-4 py-1 text-sm"
                 >
                     create file "~/pages/index.vue" to replace this page
-                </div>
-                <div
-                    class="flex space-x-4 ml-2 mt-8 justify-center md:justify-start"
-                >
-                    <AwesomeButton
-                        size="lg"
-                        :text="
-                            parseMenuTitle(
-                                awesome?.layout?.welcome?.primaryActionButton
-                                    ?.title || 'Nuxt 3',
-                            )
-                        "
-                        :to="
-                            parseMenuRoute(
-                                awesome?.layout?.welcome?.primaryActionButton
-                                    ?.to || 'https://nuxt.com',
-                            )
-                        "
-                        class="font-extrabold"
-                    />
-                    <AwesomeButton
-                        v-if="
-                            parseMenuRoute(
-                                awesome?.layout?.welcome?.secondaryActionButton
-                                    ?.to || awesome?.project?.links?.github,
-                            )
-                        "
-                        :text="
-                            parseMenuTitle(
-                                awesome?.layout?.welcome?.secondaryActionButton
-                                    ?.title || 'Github',
-                            )
-                        "
-                        :to="
-                            parseMenuRoute(
-                                awesome?.layout?.welcome?.secondaryActionButton
-                                    ?.to || awesome?.project?.links?.github,
-                            )
-                        "
-                        size="lg"
-                        class="font-extrabold"
-                        type="secondary"
-                    />
                 </div>
             </div>
             <div class="top-0 left-0 absolute w-screen">

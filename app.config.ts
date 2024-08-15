@@ -1,9 +1,9 @@
 import type { RouteLocationRaw } from 'vue-router';
-import { NuxtApp } from '#app';
-import {
+import type { NuxtApp } from '#app';
+import type {
     AwesomeLayoutPageNavbarMenu,
     AwesomeLayoutPageNavbarMenuDropdownItem,
-} from './types';
+} from './utils/types';
 
 export interface NuxtAwesomeAppConfig {
     /** title name */
@@ -77,9 +77,8 @@ declare module '@nuxt/schema' {
 
 export default defineAppConfig({
     awesome: {
-        name: 'Nuxt 3 Awesome Starter',
-        description:
-            'a starter template for Nuxt 3 with minimalist themes design, built in components, drawer & menus, and more.',
+        name: 'Portfolio',
+        description: 'with Nuxt 3 .',
         project: {
             links: {
                 github: 'https://github.com/viandwi24/nuxt3-awesome-starter',
@@ -95,7 +94,7 @@ export default defineAppConfig({
                 year: new Date().getFullYear(),
             },
             welcome: {
-                title: 'Nuxt&nbsp;3 Awesome Starter',
+                title: 'Portfolio',
                 disableInfoReplaceIndexInWelcomePage: true,
                 primaryActionButton: {
                     title: 'Nuxt 3',

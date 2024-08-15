@@ -2,9 +2,8 @@ import type { AppConfigInput } from 'nuxt/schema';
 
 export default defineAppConfig({
     awesome: {
-        name: 'Nuxt 3 Awesome Starter',
-        description:
-            'a starter template for Nuxt 3 with minimalist themes design, built in components, drawer & menus, and more.',
+        name: 'Huhu',
+        description: 'with Nuxt3.',
         project: {
             links: {
                 github: 'https://github.com/viandwi24/nuxt3-awesome-starter',
@@ -47,7 +46,7 @@ export default defineAppConfig({
                 year: new Date().getFullYear(),
             },
             welcome: {
-                title: 'Nuxt&nbsp;3 Awesome Starter',
+                title: 'My&nbsp;Portfolio',
                 disableInfoReplaceIndexInWelcomePage: true,
             },
         },

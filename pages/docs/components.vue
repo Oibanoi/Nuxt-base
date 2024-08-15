@@ -1,6 +1,6 @@
 <script lang="ts" setup>
     definePageMeta({ layout: 'page' });
-    useHead({ title: 'Blank Page' });
+    useHead({ title: 'Components Page' });
 </script>
 
 <template>
