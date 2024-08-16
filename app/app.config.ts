@@ -2,7 +2,7 @@ import type { AppConfigInput } from 'nuxt/schema';
 
 export default defineAppConfig({
     awesome: {
-        name: 'Huhu',
+        name: 'HuuPB',
         description: 'with Nuxt3.',
         project: {
             links: {
@@ -13,25 +13,37 @@ export default defineAppConfig({
             page: {
                 navbar: {
                     menus: [
-                        { type: 'link', title: 'Blank', to: { name: 'blank' } },
-                        { type: 'link', title: 'Post', to: { name: 'post' } },
-                        { type: 'link', title: 'Test', to: { name: 'test' } },
                         {
-                            type: 'dropdown',
-                            title: 'Documentations',
-                            children: [
-                                {
-                                    type: 'link',
-                                    title: 'Components',
-                                    to: { name: 'docs-components' },
-                                },
-                            ],
+                            type: 'link',
+                            title: 'About',
+                            to: { name: 'about' },
                         },
                         {
-                            type: 'button',
-                            title: 'Setting',
-                            to: { name: 'setting' },
+                            type: 'link',
+                            title: 'Experience',
+                            to: { name: 'experience' },
                         },
+                        {
+                            type: 'link',
+                            title: 'Project',
+                            to: { name: 'project' },
+                        },
+                        // {
+                        //     type: 'dropdown',
+                        //     title: 'Documentations',
+                        //     children: [
+                        //         {
+                        //             type: 'link',
+                        //             title: 'Components',
+                        //             to: { name: 'docs-components' },
+                        //         },
+                        //     ],
+                        // },
+                        // {
+                        //     type: 'button',
+                        //     title: 'Setting',
+                        //     to: { name: 'setting' },
+                        // },
                         // dynamic title
                         // {
                         //   type: 'button',
@@ -51,7 +63,7 @@ export default defineAppConfig({
             },
         },
         author: {
-            name: 'viandwi24',
+            name: 'HuuPB',
             links: {
                 github: 'https://github.com/viandwi24',
                 medium: 'https://viandwi24.medium.com',
